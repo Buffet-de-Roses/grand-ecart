@@ -1,0 +1,3 @@
+Placez ici vos images d'exercices, avec exactement les noms indiqués dans exercises.js
+(ex : fente-droite.jpg, papillon.jpg ...). Format conseillé : JPG, environ 800 x 1000 px, vertical.
+Tant qu'une image est absente, l'app affiche le nom de l'exercice à la place.
