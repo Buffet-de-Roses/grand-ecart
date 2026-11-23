@@ -1,6 +1,6 @@
 // Service worker : met l'app en cache pour qu'elle fonctionne hors ligne.
 // Changez le numéro de version quand vous modifiez des fichiers, pour forcer la mise à jour.
-const CACHE = "grand-ecart-v1";
+const CACHE = "grand-ecart-v1.1";
 const SHELL = ["./", "index.html", "style.css", "app.js", "exercises.js", "manifest.json",
   "icon-180.png", "icon-192.png", "icon-512.png"];
 
