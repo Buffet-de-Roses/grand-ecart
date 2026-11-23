@@ -108,6 +108,13 @@
     try { audioCtx = audioCtx || new (window.AudioContext || window.webkitAudioContext)(); audioCtx.resume(); } catch (e) {}
     running ? (remaining = Math.max(0, Math.ceil((endAt - Date.now()) / 1000)), stop(), render()) : start();
   });
+
+  // Lancer/pause le chrono en cliquant n'importe où, sauf sur les boutons prev/next
+  document.addEventListener("click", (e) => {
+    if (e.target.closest('#prev, #next')) return;
+    try { audioCtx = audioCtx || new (window.AudioContext || window.webkitAudioContext)(); audioCtx.resume(); } catch (e) {}
+    running ? (remaining = Math.max(0, Math.ceil((endAt - Date.now()) / 1000)), stop(), render()) : start();
+  });
   el.prev.addEventListener("click", () => { if (index > 0) { index--; show(); } });
   el.next.addEventListener("click", () => { if (index < EXERCISES.length - 1) { index++; show(); } });
   el.restart.addEventListener("click", () => { index = 0; el.done.hidden = true; el.app.hidden = false; show(); });

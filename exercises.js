@@ -11,6 +11,10 @@
 // ============================================================
 
 const EXERCISES = [
+  { name: "Balance avant droite", duration: 30, image: "images/echauffement-devant.jpg"},
+  { name: "Balance avant gauche", duration: 30, image: "images/echauffement-devant.jpg"},
+  { name: "Balance côté droit", duration: 30, image: "images/echauffement-coté.jpg"},
+  { name: "Balance côté gauche", duration: 30, image: "images/echauffement-devant.jpg"},
   { name: "Fente basse – jambe droite devant",  duration: 45, image: "images/fente-basse.jpg",
     tip: "Hanches vers le sol, dos droit, respirez lentement." },
   { name: "Fente basse – jambe gauche devant",  duration: 45, image: "images/fente-basse.jpg",
